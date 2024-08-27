@@ -2,7 +2,6 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { toast } from 'react-toastify';
 
-toast.configure()
 
 export default function DogPicture( { addFavorite } ) {
     const [dogPhoto, setDogPhoto] = useState(null)
@@ -13,7 +12,11 @@ export default function DogPicture( { addFavorite } ) {
 
     const fetchDogPhoto = async () => {
         try {
-            const response = await axios.get('https://api.thedogapi.com/v1/images/search')
+            const response = await axios.get('https://api.thedogapi.com/v1/images/search', {
+                headers: {
+                    'x-api-key': 'live_JYed1ipnSJt1rbgZ2Y9Dwyix5Ipjgen2T2RzEXHPDN2TUtPY6URVsTeZFAn88oDU'
+                }
+            })
             setDogPhoto(response.data[0].url)
             
         } catch (error) {
@@ -26,6 +29,7 @@ export default function DogPicture( { addFavorite } ) {
         toast.success('Added to Favorites!')
 
     }
+
 
 
 
