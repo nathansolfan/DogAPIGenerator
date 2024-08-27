@@ -37,7 +37,7 @@ export default function DogPicture( { addFavorite } ) {
 
 
   return (
-    <div>
+    <div className="content-wrapper">
         <h2>Random Dog Photo</h2>
         {loading ? (
             <p>Loading...</p>

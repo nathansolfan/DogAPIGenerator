@@ -1,50 +1,48 @@
-/* App.css */
-
 /* Basic body styling */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  margin: 25px;
+  font-family: 'Roboto', sans-serif; 
+  background-color: #fafafa; 
 }
 
 /* Main App container */
 .App {
   text-align: center;
   padding: 20px;
-  max-width: 400px;
+  max-width: 500px;
   margin: 20px auto;
   background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
 }
 
 /* Header styling */
 .App-header {
-  background-color: #282c34;
+  background-color: #00796b;
   padding: 20px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 15px 15px 0 0;
   color: white;
 }
 
 .App-header h1 {
-  font-size: 24px;
+  font-size: 28px; 
   margin: 0;
 }
 
 .App-header button {
-  background-color: #61dafb;
+  background-color: #009688;
   border: none;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 24px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
   transition: background-color 0.3s ease;
 }
 
 .App-header button:hover {
-  background-color: #21a1f1;
+  background-color: #00796b; 
 }
 
 .App-header button:focus {
@@ -59,21 +57,33 @@ img {
   margin-top: 20px;
 }
 
+.content-wrapper {
+  min-height: 400px; /* Set a minimum height */
+  padding: 20px;
+  
+}
+
+.content-wrapper h2 {
+  margin-bottom: 20px;
+}
+
+
+
 /* Styling for buttons within the app */
 button {
-  background-color: #007bff;
+  background-color: #0288d1; 
   border: none;
   color: white;
-  padding: 10px 15px;
+  padding: 12px 20px;
   margin: 5px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #01579b; 
 }
 
 button:focus {
@@ -82,45 +92,24 @@ button:focus {
 
 /* Link styling */
 .App-link {
-  color: #61dafb;
+  color: #0288d1;
   text-decoration: none;
   font-size: 18px;
 }
 
+/* Toast styling */
 .Toastify__toast {
-  background-color: #333; /* Dark background */
-  color: #fff; /* White text */
+  background-color: #00796b; 
+  color: #fff; 
 }
 
 .Toastify__close-button svg {
-  width: 14px;  /* Adjust the width if needed */
-  height: 16px; /* Adjust the height if needed */
-  fill: #000;   /* Ensure the icon is filled with a visible color */
-}
-
-.Toastify__close-button {
-  background-color: transparent; /* Ensure the background is transparent */
-  border: none; /* Remove any border that might be causing issues */
+  width: 14px;
+  height: 16px;
+  fill: #fff;
 }
 
 .Toastify__toast-icon svg {
-  width: 24px;  /* Adjust the width */
-  height: 24px; /* Adjust the height */
-}
-
-/* Keyframes for logo spin (keeping it if still using logo) */
-@keyframes App-logo-spin {
-  from {
-      transform: rotate(0deg);
-  }
-  to {
-      transform: rotate(360deg);
-  }
-}
-
-/* Media query for reduced motion preference */
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-  }
+  width: 24px;
+  height: 24px;
 }

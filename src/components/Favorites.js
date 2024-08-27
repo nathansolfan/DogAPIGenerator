@@ -4,7 +4,7 @@ export default function Favorites( {favorites}) {
   return (
 
 
-<div>
+<div className="content-wrapper">
     <h2>Favorites</h2>
     {favorites.length === 0 ? (
         <p>No favorites yet!</p>
