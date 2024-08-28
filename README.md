@@ -29,10 +29,3 @@
    npm start
    ```
 The app will be running at http://localhost:3000.
-
-
-
-
-
-
-This structure ensures that all setup instructions are concise and combined where appropriate.
